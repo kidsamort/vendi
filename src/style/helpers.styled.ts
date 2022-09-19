@@ -1,9 +1,10 @@
-export const color = {
-  defaults: {
-    white: 'white',
-    black: 'black',
-  },
+import { css } from 'styled-components';
 
+export const colors = {
+  defaults: {
+    white: '#fff',
+    black: '#000',
+  },
   theme: {
     dark: {
       b0: '#FAFAFA',
@@ -69,4 +70,165 @@ export const color = {
       crayola: '#FF5CAA',
     },
   },
+};
+export const fonts = {
+  styles: {
+    weight: {
+      md: '500',
+      lg: '600',
+      xl: '700',
+    },
+    size: {
+      bx: 64,
+      bl: 48,
+      bm: 40,
+      bs: 32,
+      xxl: 24,
+      xl: 20,
+      lg: 18,
+      md: 15,
+      sm: 14,
+      xs: 13,
+      xxs: 12,
+    },
+    lineHeight: {
+      xxl: 64,
+      xl: 48,
+      lg: 32,
+      md: 24,
+      sm: 16,
+      xs: 12,
+    },
+    letterSpacing: {
+      lg: '-0.03em',
+      md: '-0.02em',
+      sm: '-0.015em',
+      xs: '-0.01em',
+    },
+  },
+  h1: css`
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -0.03em;
+  `,
+  h2: css`
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+  `,
+  h3: css`
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+  `,
+  h4: css`
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+  `,
+  h5: css`
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+  `,
+  text: css`
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.01em;`,
+  textMedium: css`
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+  `,
+  miniText: css`
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+  `,
+  base: css`
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+  `,
+  baseBold: css`
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+  `,
+  miniBase: css`
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+  `,
+  title: css`
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+  `,
+  titleMedium: css`
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+  `,
+  titleMobile: css`
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+  `,
+  miniTitle: css`
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+  `,
+  button: css`
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+  `,
+  miniButton: css`
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+  `,
+  description: css`
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+  `,
+  descriptionMedium: css`
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+  `,
+  descriptionBold: css`
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+  `,
+  miniDescription: css`
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: -0.01em;
+  `,
 };
