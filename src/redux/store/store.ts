@@ -1,6 +1,9 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import themeReducer from 'redux/reducer/theme.slice';
 
-const rootReducer = combineReducers({});
+const rootReducer = combineReducers({
+  themeReducer,
+});
 
 export const setupStore = () => {
   return configureStore({
