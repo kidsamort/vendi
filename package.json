@@ -35,7 +35,7 @@
     "eject": "react-scripts eject"
   },
   "files": [
-    "src/styles/styled.d.ts"
+    "src/style/styled.d.ts"
   ],
   "eslintConfig": {
     "extends": [
