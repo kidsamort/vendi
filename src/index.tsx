@@ -1,14 +1,8 @@
-import React from 'react';
+import React, { Suspense, lazy} from 'react';
 import ReactDOM from 'react-dom/client';
-import { Provider } from 'react-redux';
-import { setupStore } from 'redux/store';
-import { GlobalStyles } from 'style/global.styled';
-import Theme from './components/theme';
-import { BrowserRouter } from 'react-router-dom';
-import AppRouter from 'components/router/router';
+import PreLoader from 'components/PreLoader';
 
-
-const store = setupStore();
+const App = lazy(() => import('components/App'));
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
@@ -16,13 +10,6 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <Theme>
-        <GlobalStyles />
-        <BrowserRouter>
-          <AppRouter />
-        </BrowserRouter>
-      </Theme>
-    </Provider>
+    <Suspense fallback={<PreLoader />}><App /></Suspense>
   </React.StrictMode>,
 );
