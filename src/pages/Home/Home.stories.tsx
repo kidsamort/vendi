@@ -3,7 +3,7 @@ import { HomeComponentProps } from './Home.props';
 import Home from './Home';
 
 export default {
-  title: 'Category/Home',
+  title: 'Page/Home',
   component: Home,
   parameters: {
     themes: {

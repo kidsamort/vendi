@@ -3,7 +3,7 @@ import { PrivateComponentProps } from './Private.props';
 import Private from './Private';
 
 export default {
-  title: 'Category/Private',
+  title: 'Page/Private',
   component: Private,
   parameters: {
     themes: {

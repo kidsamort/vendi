@@ -3,7 +3,7 @@ import { AuthComponentProps } from './Auth.props';
 import Auth from './Auth';
 
 export default {
-  title: 'Category/Auth',
+  title: 'Page/Auth',
   component: Auth,
   parameters: {
     themes: {

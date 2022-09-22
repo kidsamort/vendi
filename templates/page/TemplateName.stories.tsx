@@ -3,7 +3,7 @@ import { TemplateNameComponentProps } from './TemplateName.props';
 import TemplateName from './TemplateName';
 
 export default {
-  title: 'Category/TemplateName',
+  title: 'Page/TemplateName',
   component: TemplateName,
   parameters: {
     themes: {

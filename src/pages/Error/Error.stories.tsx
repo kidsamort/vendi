@@ -3,7 +3,7 @@ import { ErrorComponentProps } from './Error.props';
 import Error from './Error';
 
 export default {
-  title: 'Category/Error',
+  title: 'Page/Error',
   component: Error,
   parameters: {
     themes: {
